@@ -1,0 +1,25 @@
+/* Keep the personal homepage light regardless of OS or saved theme preference. */
+:root, :root[data-theme="dark"], :root[data-theme="light"] {
+  color-scheme: light;
+  --global-bg-color: #fff;
+  --global-footer-bg-color: #fff;
+  --global-text-color: #333;
+  --global-text-color-light: #666;
+  --global-border-color: #eee;
+  --global-dark-border-color: #ccc;
+  --global-link-color: #287e99;
+  --global-link-color-hover: #17556a;
+  --global-link-color-visited: #287e99;
+  --global-code-background-color: #f5f5f5;
+  --global-code-text-color: #333;
+}
+html, body, .page__footer { background-color: #fff; }
+
+/* The masthead is removed; release the space reserved for it. */
+body { padding-top: 0; }
+#main { margin-top: 20px; }
+.sidebar { margin-top: 0; padding-top: 0; }
+.page__content > h2:first-child { margin-top: 0; }
+@media screen and (min-width: 1024px) {
+  .sidebar { height: calc(100vh - 20px); }
+}
