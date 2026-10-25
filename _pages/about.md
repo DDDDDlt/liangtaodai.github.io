@@ -9,7 +9,7 @@ hide_title: true
 
 I am a second-year Ph.D. student in Computer Engineering at the University of Virginia, advised by Prof. Mircea R. Stan. Before that, I received my B.Eng. in Electronic Information Engineering from ShanghaiTech University, where I was advised by Prof. Xin Lou.
 
-My goal is to build reliable and efficient hardware systems. My research spans hardware security and formal verification, energy-efficient VLSI, and AI/LLM accelerators. My current work includes IC3/PDR-based information-flow verification, adiabatic computing in advanced FinFET nodes, oscillator-based Ising machines (OIMs), and precision-scalable LLM inference hardware.
+My research focuses on building hardware that is trustworthy and energy-efficient. On the security side, I develop scalable formal methods for hardware information-flow verification, combining IC3/PDR-based model checking with LLM-guided, solver-validated decomposition, and study GNN-based hardware Trojan detection. On the efficiency side, I work on precision-scalable accelerators for LLM inference, adiabatic computing in advanced FinFET nodes, and oscillator-based Ising machines.
 
 ## Research interests
 
