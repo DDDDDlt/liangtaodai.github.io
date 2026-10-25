@@ -9,7 +9,7 @@ hide_title: true
 
 I am a second-year Ph.D. student in Computer Engineering at the University of Virginia, advised by Prof. Mircea R. Stan. Before that, I received my B.Eng. in Electronic Information Engineering from ShanghaiTech University, where I was advised by Prof. Xin Lou.
 
-My goal is to build reliable and efficient hardware systems. My research spans hardware security and formal verification, energy-efficient VLSI, and AI/LLM accelerators. My current work includes IC3/PDR-based information-flow verification, GNN robustness under partial netlists, adiabatic computing in advanced FinFET nodes, oscillator-based Ising machines (OIMs), and precision-scalable LLM inference hardware.
+My goal is to build reliable and efficient hardware systems. My research spans hardware security and formal verification, energy-efficient VLSI, and AI/LLM accelerators. My current work includes IC3/PDR-based information-flow verification, adiabatic computing in advanced FinFET nodes, oscillator-based Ising machines (OIMs), and precision-scalable LLM inference hardware.
 
 ## Research interests
 
@@ -21,9 +21,10 @@ My goal is to build reliable and efficient hardware systems. My research spans h
 
 See also my [Google Scholar profile](https://scholar.google.com/citations?user=HGXBEa4AAAAJ&hl=en).
 
-**SLED-IFV: Solver-Validated LLM-Guided Decomposition for Scalable Hardware Information-Flow Verification**  
+**[SLED-IFV: Solver-Validated LLM-Guided Decomposition for Scalable Hardware Information-Flow Verification](https://arxiv.org/abs/2609.25637)**  
 **L. Dai**, Y. Gao, M. Morsali, and M. R. Stan.  
-ACM/IEEE ASP-DAC, 2027. *Accepted; to appear.*
+ACM/IEEE ASP-DAC, 2027. *Accepted; to appear.*  
+[arXiv](https://arxiv.org/abs/2609.25637) · [PDF](https://arxiv.org/pdf/2609.25637)
 
 **[Guarded Equivalence Predicates for Scalable Formal Hardware Information-Flow Verification](https://arxiv.org/abs/2606.22063)**  
 **L. Dai**, Y. Gao, M. Morsali, and M. R. Stan.  
@@ -37,12 +38,12 @@ ACM/IEEE GLSVLSI, 2026.
 
 **[FlexPosit: Tunable Fractional Precision for LLM Inference Accelerators](https://arxiv.org/abs/2609.04724)**  
 Y. Gao, **L. Dai**, J. Yin, X. Guo, and M. R. Stan.  
-IEEE/ACM MICRO, 2026. *Accepted; to appear.* <span class="pub-badge">Selected</span>  
+IEEE/ACM MICRO, 2026. *Accepted; to appear.*  
 [arXiv](https://arxiv.org/abs/2609.04724) · [PDF](https://arxiv.org/pdf/2609.04724)
 
 **[High-Performance Low-Power Adiabatic Systolic Array Design in Advanced FinFET Nodes](https://arxiv.org/abs/2608.30058)**  
 J. Yin, **L. Dai**, Y. Gao, and M. R. Stan.  
-IEEE ICCD, 2026. *Accepted; to appear.* <span class="pub-badge pub-badge--award">🏆 Best Paper Award Candidate</span> <span class="pub-badge">Selected</span>  
+IEEE ICCD, 2026. *Accepted; to appear.* <span class="pub-badge pub-badge--award">🏆 Best Paper Award Candidate</span>  
 [arXiv](https://arxiv.org/abs/2608.30058) · [PDF](https://arxiv.org/pdf/2608.30058)
 
 **[Delayed Coupling Restores Ising Phase Dynamics in Physical Oscillator Networks](https://arxiv.org/abs/2607.16634)**  

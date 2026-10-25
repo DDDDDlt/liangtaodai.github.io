@@ -24,7 +24,7 @@ body { padding-top: 0; }
   .sidebar { height: calc(100vh - 20px); }
 }
 
-/* Small labels on publication entries (Selected, awards). */
+/* Small labels on publication entries (e.g. award candidates). */
 .pub-badge {
   display: inline-block;
   margin-left: 0.35em;
