@@ -23,3 +23,23 @@ body { padding-top: 0; }
 @media screen and (min-width: 1024px) {
   .sidebar { height: calc(100vh - 20px); }
 }
+
+/* Small labels on publication entries (Selected, awards). */
+.pub-badge {
+  display: inline-block;
+  margin-left: 0.35em;
+  padding: 0 0.55em;
+  border: 1px solid #287e99;
+  border-radius: 999px;
+  color: #287e99;
+  font-size: 0.72em;
+  font-weight: 600;
+  line-height: 1.6;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+.pub-badge--award {
+  border-color: #c9952b;
+  background-color: #fdf6e3;
+  color: #7a5000;
+}

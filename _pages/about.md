@@ -37,12 +37,12 @@ ACM/IEEE GLSVLSI, 2026.
 
 **[FlexPosit: Tunable Fractional Precision for LLM Inference Accelerators](https://arxiv.org/abs/2609.04724)**  
 Y. Gao, **L. Dai**, J. Yin, X. Guo, and M. R. Stan.  
-IEEE/ACM MICRO, 2026. *Accepted; to appear.*  
+IEEE/ACM MICRO, 2026. *Accepted; to appear.* <span class="pub-badge">Selected</span>  
 [arXiv](https://arxiv.org/abs/2609.04724) · [PDF](https://arxiv.org/pdf/2609.04724)
 
 **[High-Performance Low-Power Adiabatic Systolic Array Design in Advanced FinFET Nodes](https://arxiv.org/abs/2608.30058)**  
 J. Yin, **L. Dai**, Y. Gao, and M. R. Stan.  
-IEEE ICCD, 2026. *Accepted; to appear.*  
+IEEE ICCD, 2026. *Accepted; to appear.* <span class="pub-badge pub-badge--award">🏆 Best Paper Award Candidate</span> <span class="pub-badge">Selected</span>  
 [arXiv](https://arxiv.org/abs/2608.30058) · [PDF](https://arxiv.org/pdf/2608.30058)
 
 **[Delayed Coupling Restores Ising Phase Dynamics in Physical Oscillator Networks](https://arxiv.org/abs/2607.16634)**  
@@ -79,6 +79,7 @@ arXiv, 2023.
 
 ## Honors and Awards
 
+* **2026** — Best Paper Award Candidate, IEEE International Conference on Computer Design (ICCD)
 * **2026** — DAC Young Fellow, ACM/IEEE Design Automation Conference
 * **2025** — Provost Fellowship, University of Virginia
 * **2025** — Student Travel Grant, IEEE ISCAS
