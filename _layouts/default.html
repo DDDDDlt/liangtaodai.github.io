@@ -15,6 +15,10 @@ layout: compress
 
     {% include browser-upgrade.html %}
 
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch between light and dark mode" title="Switch light / dark mode">
+      <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
+    </button>
+
     {{ content }}
 
     <div class="page__footer">

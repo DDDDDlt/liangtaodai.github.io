@@ -2,6 +2,17 @@
 
 <!-- start custom head snippets -->
 
+<!-- Apply the saved light/dark choice (or the OS preference) before the page paints -->
+<script>
+  try {
+    var savedTheme = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (savedTheme === "dark" || (savedTheme !== "light" && prefersDark)) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  } catch (e) {}
+</script>
+
 <!-- Support for Academicons -->
 <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"></noscript>

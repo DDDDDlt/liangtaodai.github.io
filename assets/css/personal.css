@@ -1,5 +1,5 @@
-/* Keep the personal homepage light regardless of OS or saved theme preference. */
-:root, :root[data-theme="dark"], :root[data-theme="light"] {
+/* Light palette (default). Visitors can switch to dark with the button in the top-right corner. */
+:root, :root[data-theme="light"] {
   color-scheme: light;
   --global-bg-color: #fff;
   --global-footer-bg-color: #fff;
@@ -13,7 +13,22 @@
   --global-code-background-color: #f5f5f5;
   --global-code-text-color: #333;
 }
-html, body, .page__footer { background-color: #fff; }
+/* Dark palette: black background. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --global-bg-color: #121212;
+  --global-footer-bg-color: #121212;
+  --global-text-color: #e6e6e6;
+  --global-text-color-light: #a8a8a8;
+  --global-border-color: #2c2c2c;
+  --global-dark-border-color: #444;
+  --global-link-color: #5fb8d6;
+  --global-link-color-hover: #8fd0e6;
+  --global-link-color-visited: #5fb8d6;
+  --global-code-background-color: #1e1e1e;
+  --global-code-text-color: #e6e6e6;
+}
+html, body, .page__footer { background-color: var(--global-bg-color); }
 
 /* The masthead is removed; release the space reserved for it. */
 body { padding-top: 0; }
@@ -42,4 +57,13 @@ body { padding-top: 0; }
   border-color: #c9952b;
   background-color: #fdf6e3;
   color: #7a5000;
+}
+:root[data-theme="dark"] .pub-badge {
+  border-color: #5fb8d6;
+  color: #5fb8d6;
+}
+:root[data-theme="dark"] .pub-badge--award {
+  border-color: #c9952b;
+  background-color: #2a2212;
+  color: #f0c674;
 }
