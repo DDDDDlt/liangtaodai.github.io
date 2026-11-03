@@ -94,6 +94,10 @@ body { padding-top: 0; }
 .rmap-works { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
 .rmap-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem; }
 .rmap-col { display: grid; gap: 0.6rem; align-content: start; }
+@supports (grid-template-rows: subgrid) {
+  .rmap-cols { grid-template-rows: repeat(3, auto); row-gap: 0.6rem; }
+  .rmap-col { grid-row: span 3; grid-template-rows: subgrid; }
+}
 
 .rmap-theme { display: flex; flex-direction: column; justify-content: center; gap: 0.15rem;
   border-radius: 8px; background: var(--c); color: #fff; padding: 0.55rem 0.75rem; }
@@ -122,5 +126,7 @@ a.rmap-card:hover { border-color: var(--c); box-shadow: 0 2px 8px rgba(0,0,0,0.0
 
 @media screen and (max-width: 700px) {
   .rmap-row, .rmap-cols, .rmap-works { grid-template-columns: 1fr; }
+  .rmap-cols { grid-template-rows: none; }
+  .rmap-col { grid-row: auto; grid-template-rows: none; }
   .rmap-works--chain > .rmap-card + .rmap-card::before { content: "↓"; left: 50%; top: -0.68rem; transform: translateX(-50%); }
 }
