@@ -11,6 +11,10 @@ I am a second-year Ph.D. student in Computer Engineering at the University of Vi
 
 My research focuses on building hardware that is trustworthy and energy-efficient. On the security side, I develop scalable formal methods for hardware information-flow verification, combining IC3/PDR-based model checking with LLM-guided, solver-validated decomposition, and study GNN-based hardware Trojan detection. On the efficiency side, I work on precision-scalable accelerators for LLM inference, adiabatic computing in advanced FinFET nodes, and oscillator-based Ising machines.
 
+## Research Overview
+
+{% include research_map.html %}
+
 ## Research interests
 
 * Formal hardware verification and hardware security
