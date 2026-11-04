@@ -92,7 +92,7 @@ body { padding-top: 0; }
   border: 1px solid var(--ln); border-radius: 10px; background: var(--bg);
   padding: 0.55rem; display: flex; flex-direction: column; gap: 0.4rem; }
 .rmap-area--energy { --c: var(--rm-energy); --bg: var(--rm-energy-bg); --ln: var(--rm-energy-line); }
-.rmap-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.1rem 0.5rem; }
+.rmap-head { display: flex; flex-direction: column; gap: 0.1rem; }
 .rmap-label { color: var(--c); font-weight: 700; font-size: 0.66rem; letter-spacing: 0.07em; text-transform: uppercase; }
 .rmap-q { color: var(--global-text-color); font-style: italic; font-weight: 600; font-size: 0.72rem; }
 
@@ -107,7 +107,9 @@ body { padding-top: 0; }
 .rmap-card { position: relative; display: flex; flex-direction: column; gap: 0.05rem;
   border: 1px solid var(--ln); border-radius: 6px; background: var(--rm-card);
   padding: 0.3rem 0.45rem; color: var(--global-text-color); text-decoration: none; }
-a.rmap-card, a.rmap-card:visited { color: var(--global-text-color); text-decoration: none; }
+a.rmap-card, a.rmap-card:visited, a.rmap-card:hover, a.rmap-card * { color: var(--global-text-color); text-decoration: none; }
+a.rmap-card span { color: var(--rm-muted); }
+a.rmap-card em { color: var(--c); }
 a.rmap-card:hover { border-color: var(--c); box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
 .rmap-card strong { font-size: 0.72rem; }
 .rmap-card span { color: var(--rm-muted); }
@@ -116,8 +118,12 @@ a.rmap-card:hover { border-color: var(--c); box-shadow: 0 2px 6px rgba(0,0,0,0.0
 .rmap-card--chip { border-style: dashed; border-color: var(--c); }
 
 /* Arrow: this card follows from the one above it. */
-.rmap-next::before { content: "↓"; position: absolute; top: -0.55rem; left: 50%;
-  transform: translateX(-50%); color: var(--c); font-size: 0.66rem; line-height: 1; }
+.rmap-next::before { content: ""; position: absolute; top: 0; left: 50%; z-index: 1;
+  width: 1rem; height: 1rem; transform: translate(-50%, -62%); box-sizing: border-box;
+  border: 1px solid var(--c); border-radius: 50%; background: var(--rm-card); }
+.rmap-next::after { content: ""; position: absolute; top: 0; left: 50%; z-index: 2;
+  transform: translate(-50%, -50%); border: 0.25rem solid transparent; border-bottom: 0;
+  border-top: 0.3rem solid var(--c); }
 
 /* Line up headers, theme boxes and cards across both areas. */
 @supports (grid-template-rows: subgrid) {
