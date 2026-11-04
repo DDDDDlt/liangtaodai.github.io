@@ -73,60 +73,63 @@ body { padding-top: 0; }
    Two areas side by side; each research theme is one column.
    ========================================================================== */
 .rmap {
-  --rm-trust: #3d5a98;  --rm-trust-tint: #eef2fa;  --rm-trust-line: #d3dcef;
-  --rm-energy: #2f7d5b; --rm-energy-tint: #edf6f1; --rm-energy-line: #cfe5d9;
-  --rm-card: #fff; --rm-muted: #6b6b6b; --rm-wip: #8f8f8f;
-  display: grid; grid-template-columns: 2fr 3fr; gap: 0.75rem;
-  margin: 1em 0 1.4em; font-size: 0.7rem; line-height: 1.3;
+  --rm-trust: #1f6f78;  --rm-trust-bg: #eef6f7;  --rm-trust-line: #b9d9dc;
+  --rm-energy: #b4690e; --rm-energy-bg: #fdf5ea; --rm-energy-line: #ecd3ae;
+  --rm-card: #fff; --rm-muted: #666; --rm-wip: #8a8a8a; --rm-on-theme: #fff;
+  display: grid; grid-template-columns: 2fr 3fr; gap: 0.6rem;
+  margin: 0.8em 0 1.2em; font-size: 0.66rem; line-height: 1.25;
 }
 :root[data-theme="dark"] .rmap {
-  --rm-trust: #8fa8e0;  --rm-trust-tint: #1a2030;  --rm-trust-line: #2c3650;
-  --rm-energy: #7cc7a2; --rm-energy-tint: #16231d; --rm-energy-line: #284034;
-  --rm-card: #1b1b1b; --rm-muted: #a8a8a8; --rm-wip: #8c8c8c;
+  --rm-trust: #5cc2cc;  --rm-trust-bg: #14262a;  --rm-trust-line: #24474c;
+  --rm-energy: #e8a54f; --rm-energy-bg: #2a2014; --rm-energy-line: #4d3a1f;
+  --rm-card: #1b1b1b; --rm-muted: #a8a8a8; --rm-wip: #8c8c8c; --rm-on-theme: #111;
 }
-.rmap-area { --c: var(--rm-trust); --tint: var(--rm-trust-tint); --ln: var(--rm-trust-line);
-  border: 1px solid var(--ln); border-top: 3px solid var(--c); border-radius: 10px;
-  background: var(--tint); padding: 0.7rem; display: flex; flex-direction: column; }
-.rmap-area--energy { --c: var(--rm-energy); --tint: var(--rm-energy-tint); --ln: var(--rm-energy-line); }
-.rmap-head { display: flex; flex-direction: column; gap: 0.1rem; margin-bottom: 0.6rem; }
-.rmap-label { color: var(--c); font-weight: 700; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
-.rmap-q { color: var(--global-text-color); font-style: italic; font-weight: 600; font-size: 0.8rem; }
-
-.rmap-cols { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0.5rem; flex: 1; }
-.rmap-col { display: grid; gap: 0.5rem; align-content: start; }
-/* Line up headers, theme boxes and cards across both areas. */
-@supports (grid-template-rows: subgrid) {
-  .rmap { grid-template-rows: repeat(4, auto); row-gap: 0; }
-  .rmap-area { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0.5rem; }
-  .rmap-head { margin-bottom: 0.1rem; }
-  .rmap-cols { grid-row: span 3; grid-template-rows: subgrid; row-gap: 0.5rem; }
-  .rmap-col { grid-row: span 3; grid-template-rows: subgrid; }
+/* Use the empty space right of the text column on wide screens. */
+@media screen and (min-width: 1280px) {
+  .rmap { margin-right: -10rem; }
 }
+.rmap-area { --c: var(--rm-trust); --bg: var(--rm-trust-bg); --ln: var(--rm-trust-line);
+  border: 1px solid var(--ln); border-radius: 10px; background: var(--bg);
+  padding: 0.55rem; display: flex; flex-direction: column; gap: 0.4rem; }
+.rmap-area--energy { --c: var(--rm-energy); --bg: var(--rm-energy-bg); --ln: var(--rm-energy-line); }
+.rmap-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.1rem 0.5rem; }
+.rmap-label { color: var(--c); font-weight: 700; font-size: 0.66rem; letter-spacing: 0.07em; text-transform: uppercase; }
+.rmap-q { color: var(--global-text-color); font-style: italic; font-weight: 600; font-size: 0.72rem; }
 
-.rmap-theme { display: flex; flex-direction: column; gap: 0.15rem;
-  border-left: 3px solid var(--c); border-radius: 4px; background: var(--rm-card);
-  padding: 0.4rem 0.5rem; }
-.rmap-theme strong { color: var(--c); font-size: 0.76rem; line-height: 1.25; }
-.rmap-theme span { color: var(--rm-muted); font-size: 0.66rem; font-style: italic; }
+.rmap-cols { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 0.4rem; flex: 1; }
+.rmap-col { display: grid; gap: 0.4rem; align-content: start; }
 
-.rmap-card { position: relative; display: flex; flex-direction: column; gap: 0.1rem;
+.rmap-theme { display: flex; flex-direction: column; justify-content: center; gap: 0.05rem;
+  border-radius: 6px; background: var(--c); color: var(--rm-on-theme); padding: 0.3rem 0.45rem; }
+.rmap-theme strong { font-size: 0.72rem; line-height: 1.2; }
+.rmap-theme span { font-size: 0.62rem; font-style: italic; opacity: 0.9; }
+
+.rmap-card { position: relative; display: flex; flex-direction: column; gap: 0.05rem;
   border: 1px solid var(--ln); border-radius: 6px; background: var(--rm-card);
-  padding: 0.4rem 0.5rem; color: var(--global-text-color); text-decoration: none; }
+  padding: 0.3rem 0.45rem; color: var(--global-text-color); text-decoration: none; }
 a.rmap-card, a.rmap-card:visited { color: var(--global-text-color); text-decoration: none; }
 a.rmap-card:hover { border-color: var(--c); box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
-.rmap-card strong { font-size: 0.76rem; }
+.rmap-card strong { font-size: 0.72rem; }
 .rmap-card span { color: var(--rm-muted); }
-.rmap-card em { margin-top: 0.1rem; color: var(--c); font-style: normal; font-weight: 600; font-size: 0.64rem; }
+.rmap-card em { color: var(--c); font-style: normal; font-weight: 600; font-size: 0.62rem; }
 .rmap-card em.rmap-wip { color: var(--rm-wip); font-style: italic; font-weight: 500; }
 .rmap-card--chip { border-style: dashed; border-color: var(--c); }
 
 /* Arrow: this card follows from the one above it. */
-.rmap-next::before { content: "↓"; position: absolute; top: -0.62rem; left: 50%;
-  transform: translateX(-50%); color: var(--c); font-size: 0.75rem; line-height: 1; }
+.rmap-next::before { content: "↓"; position: absolute; top: -0.55rem; left: 50%;
+  transform: translateX(-50%); color: var(--c); font-size: 0.66rem; line-height: 1; }
+
+/* Line up headers, theme boxes and cards across both areas. */
+@supports (grid-template-rows: subgrid) {
+  .rmap { grid-template-rows: repeat(4, auto); row-gap: 0; }
+  .rmap-area { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0.4rem; }
+  .rmap-cols { grid-row: span 3; grid-template-rows: subgrid; row-gap: 0.4rem; }
+  .rmap-col { grid-row: span 3; grid-template-rows: subgrid; }
+}
 
 /* Narrower screens: stack the two areas; on phones, one column per area. */
 @media screen and (max-width: 1100px) {
-  .rmap { grid-template-columns: 1fr; grid-template-rows: none; row-gap: 0.75rem; font-size: 0.78rem; }
+  .rmap { grid-template-columns: 1fr; grid-template-rows: none; row-gap: 0.6rem; font-size: 0.74rem; }
   .rmap-area { grid-row: auto; grid-template-rows: none; }
   .rmap-cols { grid-row: auto; grid-template-rows: repeat(3, auto); }
 }
