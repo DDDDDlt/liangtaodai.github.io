@@ -5,7 +5,7 @@ author_profile: true
 hide_title: true
 ---
 
-## Short Bio
+## Bio
 
 I am a second-year Ph.D. student in Computer Engineering at the University of Virginia, advised by Prof. Mircea R. Stan. Before that, I received my B.Eng. in Electronic Information Engineering from ShanghaiTech University, where I was advised by Prof. Xin Lou.
 
