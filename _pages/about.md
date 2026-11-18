@@ -5,11 +5,11 @@ author_profile: true
 hide_title: true
 ---
 
-## Bio
+## About Me
 
 I am a second-year Ph.D. student in Computer Engineering at the University of Virginia, advised by Prof. Mircea R. Stan. Before that, I received my B.Eng. in Electronic Information Engineering from ShanghaiTech University, where I was advised by Prof. Xin Lou.
 
-My research focuses on **hardware for edge computing**. I believe that alongside large cloud AI agents, everyone will have a personal agent running locally on a phone, laptop, or robot. It keeps private data on the device and works with cloud agents when it needs more capability. This makes edge hardware responsible for two things: keeping that data **secure**, and running on a battery with high **energy efficiency**.
+My research focuses on **hardware for edge computing**, where devices must keep private data **secure** while running efficiently on a battery.
 
 On the security side, I develop scalable formal methods that prove a hardware design does not leak secrets, combining IC3/PDR-based model checking with LLM-guided, solver-validated decomposition, and I study GNN-based hardware Trojan detection. On the efficiency side, I work on precision-scalable accelerators for LLM inference and adiabatic computing in advanced FinFET nodes, and I lead a 12&nbsp;nm FinFET test chip that is now in tape-out. I also explore oscillator-based Ising machines.
 
