@@ -11,7 +11,7 @@ I am a second-year Ph.D. student in Computer Engineering at the University of Vi
 
 My research focuses on **hardware design and verification for edge devices**, which must be secure enough to hold personal data and efficient enough to run on a battery.
 
-On the security side, I develop scalable formal methods that prove a hardware design does not leak secrets, combining IC3/PDR-based model checking with LLM-guided, solver-validated decomposition, and I study GNN-based hardware Trojan detection. On the efficiency side, I work on precision-scalable accelerators for LLM inference and adiabatic computing in advanced FinFET nodes, and I lead a 12&nbsp;nm FinFET test chip that is now in tape-out. I also explore oscillator-based Ising machines.
+On the security side, I develop scalable formal methods that prove a hardware design does not leak secrets, combining IC3/PDR-based model checking with LLM-guided, solver-validated decomposition, and I study GNN-based hardware Trojan detection. On the efficiency side, I work on LLM accelerators that scale their precision and keep learning during inference, and on adiabatic computing in advanced FinFET nodes, where I lead a 12&nbsp;nm FinFET test chip now in tape-out. I also explore oscillator-based Ising machines.
 
 ## Research Overview
 
@@ -46,6 +46,11 @@ ACM/IEEE GLSVLSI, 2026.
 Y. Gao, **L. Dai**, J. Yin, X. Guo, and M. R. Stan.  
 IEEE/ACM MICRO, 2026. *Accepted; to appear.*  
 [arXiv](https://arxiv.org/abs/2609.04724) · [PDF](https://arxiv.org/pdf/2609.04724)
+
+**[Mutable Inference: Architecting LLM Accelerators for Inference-Time Learning](https://arxiv.org/abs/2611.18523)**  
+Y. Gao, **L. Dai**, M. Morsali, J. Huo, and M. R. Stan.  
+arXiv, 2026.  
+[arXiv](https://arxiv.org/abs/2611.18523) · [PDF](https://arxiv.org/pdf/2611.18523)
 
 **[High-Performance Low-Power Adiabatic Systolic Array Design in Advanced FinFET Nodes](https://arxiv.org/abs/2608.30058)**  
 J. Yin, **L. Dai**, Y. Gao, and M. R. Stan.  
