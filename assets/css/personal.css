@@ -143,3 +143,10 @@ a.rmap-card:hover { border-color: var(--c); box-shadow: 0 2px 6px rgba(0,0,0,0.0
   .rmap-cols { grid-auto-flow: row; grid-template-columns: 1fr; grid-template-rows: none; }
   .rmap-col { grid-row: auto; grid-template-rows: none; }
 }
+
+/* A small secondary link inside a card (e.g. a follow-up paper). */
+.rmap-card a.rmap-link, .rmap-card a.rmap-link:visited { color: var(--global-text-color); text-decoration: none; }
+.rmap-card a.rmap-also, .rmap-card a.rmap-also:visited { margin-top: 0.15rem; padding-top: 0.15rem;
+  border-top: 1px dashed var(--ln); color: var(--rm-muted); font-size: 0.62rem; text-decoration: none; white-space: nowrap; }
+.rmap-card a.rmap-also em { font-size: 0.6rem; }
+.rmap-card a:hover { text-decoration: underline; }
